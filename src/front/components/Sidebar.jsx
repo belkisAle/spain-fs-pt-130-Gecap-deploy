@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useGlobalReducer from "../hooks/useGlobalReducer";
-
+import faviCon from "../assets/img/favicon.png"
 export const Sidebar = () => {
     const location = useLocation();
     const navigate = useNavigate();
@@ -36,7 +36,7 @@ export const Sidebar = () => {
 
             <div className="d-flex justify-content-center align-items-center mb-2 mt-2 w-100">
                 <img
-                    src="/src/front/assets/img/favicon.png"
+                    src={faviCon}
                     alt="favicon GECAP"
                     style={{ width: "100px", height: "auto", objectFit: "contain" }}
                 />
