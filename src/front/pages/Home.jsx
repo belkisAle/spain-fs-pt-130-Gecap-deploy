@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import saludDigital from "../../../public/SaludDigital.jpeg"
 
 export const Home = () => {
 	const [solicitud, setSolicitud] = useState({
@@ -110,7 +111,7 @@ export const Home = () => {
 								opacity: 0.4
 							}}></div>
 							<img
-								src="/SaludDigital.jpeg"
+								src={saludDigital}
 								alt="Salud Digital"
 								className="img-fluid rounded-4 shadow-lg position-relative"
 								style={{ zIndex: 1 }}
